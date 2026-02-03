@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+   
+        section{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            padding: 12px;
+        }
+        .item{
+            background-color: rgb(0, 21, 255);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            padding: 12px;
+        }
+        .box{
+            background-color: tomato;
+            color: black;
+         
+            border-radius: 12px;
+            height: 350px;
+            width: 350px;
+            gap: 12px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+        @media screen and (min-width: 480px) and (max-width: 768px) {
+            .box{
+                flex: 45%;
+            }
+        }
+        @media screen and (max-width: 480px) {
+            .box{
+                flex: 100%;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="item">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+    </section>
+    
+</body>
+</html>
